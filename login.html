@@ -35,14 +35,14 @@
             <p>Usuario o contraseña incorrectos</p>
         </div>
         <section class="form-container">
-            <form action="get" class="login-form">
+            <form id="login-form" action="get" class="login-form">
                 <label for="username">Nombre de Usuario:</label>
                 <input type="text" id="username" name="username" required>
 
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
-                <p>Mostrar contraseña <span id="eye-icon">👁️</span></p>
-                <button type="submit" id="btn" class="btn">Iniciar Sesión</button>
+                <p id="eye-icon" class="eye-icon">Mostrar contraseña 👁️</p>
+                <button type="submit" id="btn-login" class="btn">Iniciar Sesión</button>
             </form>
         </section>
         
@@ -76,5 +76,6 @@
         <span></span>
 
     </footer>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

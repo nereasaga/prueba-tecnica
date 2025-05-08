@@ -56,6 +56,11 @@ nav {
     padding: 1.5rem;
 }
 
+.date {
+    font-weight: bold;
+    color: var(--detail-color);
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -293,12 +298,27 @@ footer div ul li {
     transition: 0.5s;
 }
 
+.btn-disabled {
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor:not-allowed;
+    margin-top: 1.5rem;
+}
+
 /*     Media query */
 @media (max-width: 768px) {
 
     .logish {
         font-size: 1.8rem;
         padding-left: 0.5rem;
+    }
+
+    .date {
+        display: none;
     }
 
     .nav-links {
